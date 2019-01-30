@@ -14,9 +14,11 @@ pickForm.addEventListener('submit', function(event) {
     console.log(randomNumber);
 
   //after we get to this point call catOrDog() no params and console.log it
+  //then having group TDD function.
     const animal = catOrDog(randomNumber);
     console.log(animal);
 
+    //after TDD work on this section for code cooking
     let imageSource = '';
     if(animal === 'cat') {
         imageSource = '../assets/cat.jpg';
