@@ -12,17 +12,16 @@ pickForm.addEventListener('submit', function(event) {
     const animal = catOrDog(randomNumber);
     console.log(animal);
 
-    //time to navigate to the assets folder and go into how to make one
-
     let imageSource = '';
     if(animal === 'cat') {
         imageSource = 'cat';
     } else {
         imageSource = 'dog';
     }
-    //am i getting an image source
+  //am i getting an image source
     console.log(imageSource);
 
-    //set the dom node for image to have a source of imageSource
+  //time to navigate to the assets folder and go into how to make one
+  //set the dom node for image to have a source of imageSource
     image.src = imageSource;
 });
