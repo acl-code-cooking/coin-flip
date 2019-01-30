@@ -14,9 +14,9 @@ pickForm.addEventListener('submit', function(event) {
 
     let imageSource = '';
     if(animal === 'cat') {
-        imageSource = 'cat';
+        imageSource = '../assets/cat.jpg';
     } else {
-        imageSource = 'dog';
+        imageSource = '../assets/dog.jpg';
     }
   //am i getting an image source
     console.log(imageSource);
@@ -24,4 +24,5 @@ pickForm.addEventListener('submit', function(event) {
   //time to navigate to the assets folder and go into how to make one
   //set the dom node for image to have a source of imageSource
     image.src = imageSource;
+    image.classList.remove('hidden');
 });

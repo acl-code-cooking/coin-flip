@@ -1,4 +1,4 @@
-#color-box {
+#image-container {
   border: 1px solid black;
   min-height: 200px;
   min-width: 200px;
@@ -6,4 +6,8 @@
 
 .hidden {
   visibility: hidden;
+}
+img {
+  max-height: 200px;
+  max-width: 200px;
 }
