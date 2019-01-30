@@ -1,7 +1,7 @@
 import catOrDog from './cat-or-dog.js';
 const pickForm = document.getElementById('pick-form');
 const image = document.getElementById('animal-image');
-// const status = document.getElementById('status');
+const status = document.getElementById('status');
 const dogCount = document.getElementById('dog-count');
 const catCount = document.getElementById('cat-count');
 let cats = 0;
@@ -20,10 +20,12 @@ pickForm.addEventListener('submit', function(event) {
     let imageSource = '';
     if(animal === 'cat') {
         imageSource = '../assets/cat.jpg';
+        status.textContent = 'Meow!';
         cats++;
         catCount.textContent = cats;
     } else {
         imageSource = '../assets/dog.jpg';
+        status.textContent = 'Woof!';
         dogs++;
         dogCount.textContent = dogs;
     }
