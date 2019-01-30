@@ -6,6 +6,8 @@ function catOrDog(randomNumber) {
         animal = 'dog';
     }
     return animal;
+
+    //first create basic function that console logs hello;
 }
 
 export default catOrDog;
